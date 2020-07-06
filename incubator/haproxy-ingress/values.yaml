@@ -189,7 +189,6 @@ controller:
   service:
     annotations: {}
     labels: {}
-    clusterIP: ""
 
     ## List of IP addresses at which the controller services are available
     ## Ref: https://kubernetes.io/docs/user-guide/services/#external-ips
@@ -223,7 +222,6 @@ controller:
 
     service:
       annotations: {}
-      clusterIP: ""
 
       ## List of IP addresses at which the stats service is available
       ## Ref: https://kubernetes.io/docs/user-guide/services/#external-ips
@@ -266,8 +264,6 @@ controller:
       annotations: {}
       # prometheus.io/scrape: "true"
       # prometheus.io/port: "10254"
-
-      clusterIP: ""
 
       ## List of IP addresses at which the stats-exporter service is available
       ## Ref: https://kubernetes.io/docs/user-guide/services/#external-ips
@@ -354,7 +350,6 @@ defaultBackend:
   service:
     name: ingress-default-backend
     annotations: {}
-    clusterIP: ""
 
     ## List of IP addresses at which the default backend service is available
     ## Ref: https://kubernetes.io/docs/user-guide/services/#external-ips
